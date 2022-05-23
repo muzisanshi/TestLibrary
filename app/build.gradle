@@ -1,23 +1,23 @@
 plugins {
     id 'com.android.library'
-    id 'maven-publish'
+//    id 'maven-publish'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-                //建议和github地址对应，否则对jitpack无效
-                groupId = 'com.github.muzisanshi'
-                //建议和github仓库名称对应，否则对jitpack无效
-                artifactId = 'TestLibrary'
-                //建议和release的tag相同，否则对jitpack无效
-                version = '1.0.0'
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                from components.release
+//                //建议和github地址对应，否则对jitpack无效
+//                groupId = 'com.github.muzisanshi'
+//                //建议和github仓库名称对应，否则对jitpack无效
+//                artifactId = 'TestLibrary'
+//                //建议和release的tag相同，否则对jitpack无效
+//                version = '1.0.0'
+//            }
+//        }
+//    }
+//}
 
 android {
     compileSdk 32
